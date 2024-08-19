@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Space Mono', Arial, sans-serif;
+  background: url('https://w.wallhaven.cc/full/39/wallhaven-39k2k6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #ffc404;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Space Mono', Arial, sans-serif;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.main-content h1 {
+  font-size: 30rem;
+  color: #ffc404;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  margin-top: 50px;
+  letter-spacing: 5px; /* Adjust the spacing as needed */
+  text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000; /* Four shadows to create an outline */
+}
+
+.mystic-section {
+  background: no-repeat center center;
+  background-color: #000000;
+  background-size: cover;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+  min-height: 84vh; /* Ensure it takes up the full viewport height */
+}
+
+.mystic-section .emblem {
+  margin-bottom: 20px;
+}
+
+.mystic-section .emblem img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.mystic-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.mystic-section p {
+  font-size: .8rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  background: url('https://images.squarespace-cdn.com/content/v1/65f2143e97290e37f5002e39/801ed9d2-4dd7-4b1b-bf89-c6cb84932001/Footer_Gradient_BG.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listen-button {
+  background-color: transparent;
+  color: #ffc404;
+  border: 2px solid #ffc404;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.listen-button:hover {
+  background-color: #ffc404;
+  color: black;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYTHIA</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script>
+        function toggleBlurb(member) {
+            const blurbs = document.querySelectorAll('.blurb');
+            blurbs.forEach(blurb => {
+                if (blurb.id === member) {
+                    blurb.classList.toggle('active');
+                } else {
+                    blurb.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Designer__4_-removebg-preview.png" alt="Logo" width="50">
+        </div>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./music.html">Our Music</a>
+    </div>
+    <div class="main-content">
+        <h1>ALL ABOUT</h1>
+        <h1>PYTHIA</h1>
+    </div>
+    <div class="sec2">
+        <div class="emblem">
+            <img src="Designer__4_-removebg-preview.png" alt="Emblem" width="400">
+        </div>
+        <div class="content">
+            <h1>OUR MEMBERS</h1>
+            <div class="member-list">
+                <div class="member-box" onclick="toggleBlurb('suzie')">
+                    <h2>SALTINE</h2>
+                    <div id="suzie" class="blurb">
+                        Saltine plays guitar and bass for Pythia. She is one of the band's founders.
+                    </div>
+                </div>
+                <div class="member-box" onclick="toggleBlurb('robert')">
+                    <h2>SUBIN</h2>
+                    <div id="robert" class="blurb">
+                        Subin plays drums and does other kinds of percussion for Pythia. She is one of the band's founders.
+                    </div>
+                </div>
+                <div class="member-box" onclick="toggleBlurb('tanya')">
+                    <h2>TAMYSKA</h2>
+                    <div id="tanya" class="blurb">
+                        Tamyska plays keys and the saxophone for Pythia. He writes the jazzier and calmer songs.
+                    </div>
+                </div>
+                <div class="member-box" onclick="toggleBlurb('jordan')">
+                    <h2>TONABRIX</h2>
+                    <div id="jordan" class="blurb">
+                        Tonabrix does all vocals and writes most lyrics for the songs. He brings all the songs together.
+                    </div>
+                </div>
+                <div class="member-box" onclick="toggleBlurb('ettaboo')">
+                    <h2>WITCHDOC</h2>
+                    <div id="ettaboo" class="blurb">
+                        Witchdoc organizes all the albums that Pythia has ever put out.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New Section -->
+    <div class="sec3">
+        <h1>A LITTLE ABOUT OUR ALBUMS</h1>
+        <div class="album-list">
+            <div class="album-box">
+                <p>[ - ]</p>
+                <h2>LATAKU</h2>
+                <p>Experimentation with different songs and song types.</p>
+                <a href="https://www.bandlab.com/pythia_band/albums/f2d58458-414c-ef11-991a-002248449fa4" target="_blank">
+                <button>LISTEN NOW</button>
+                </a>
+            </div>
+            <div class="album-box">
+                <p>[ - ]</p>
+                <h2>-0</h2>
+                <p>A strange album with a lot of weird song titles. Enjoy?</p>
+                <a href="https://www.bandlab.com/pythia_band/albums/b6dc6cd2-b256-ef11-991a-002248449fa4" target="_blank">
+                <button>LISTEN NOW</button>
+                </a>
+            </div>
+            <div class="album-box">
+                <p>[ - ]</p>
+                <h2>COMING SOON</h2>
+                <p>A new album that might be coming soon. You'll have to wait.</p>
+                <a>
+                <button>COMING SOON</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <a href="https://www.bandlab.com/pythia_band" target="_blank">
+                <button class="listen-button">LISTEN TO US</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

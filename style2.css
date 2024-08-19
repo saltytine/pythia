@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: 'Space Mono', Arial, sans-serif;
+  background: url('https://w.wallhaven.cc/full/39/wallhaven-39k2k6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #ffc404;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Space Mono', Arial, sans-serif;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.main-content h1 {
+  font-size: 13rem;
+  color: #ffc404;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 87px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-left: 35px;
+  text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000; /* Four shadows to create an outline */
+}
+
+.sec2 {
+  background-color: black;
+  background-size: cover;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 10%;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emblem img {
+  max-width: 6000px;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.content h1 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 3.5rem;
+}
+
+.member-list {
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.member-box {
+  background-color: rgb(74, 74, 74, 0.8);
+  color: #ffc404;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, height 0.3s ease;
+  border: 2px solid #ffc404;
+  border-radius: 5px;
+  position: relative;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-box::before {
+  content: '+';
+  font-size: 1.2rem;
+  position: absolute;
+  right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.member-box:hover {
+  background-color: rgb(97, 97, 97, 0.1);
+}
+
+.blurb {
+  display: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffc404;
+  padding-top: 10px;
+  border-top: 1px solid #ffc404;
+  font-family: 'Space Mono', monospace;
+}
+
+.blurb.active {
+  display: block;
+}
+
+.member-box h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.sec3 {
+  background-color: black;
+  background-size: cover;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 10%;
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec3 h1 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 5rem;
+  color: #ffc404;
+  margin-bottom: 0px;
+}
+
+.album-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.album-box {
+  background-color: rgb(74, 74, 74, 0.8);
+  color: #ffc404;
+  padding: 20px;
+  border: 2px solid #ffc404;
+  border-radius: 5px;
+  width: 27%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  height: 400px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.album-box h2 {
+  font-family: Bebas Neue;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.album-box p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.album-elements {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.album-box button {
+  background-color: transparent;
+  color: #ffc404;
+  border: 2px solid #ffc404;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Space Mono', Arial, sans-serif;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.album-box button:hover {
+  background-color: #ffc404;
+  color: black;
+}
+
+.footer {
+  background: url('https://images.squarespace-cdn.com/content/v1/65f2143e97290e37f5002e39/801ed9d2-4dd7-4b1b-bf89-c6cb84932001/Footer_Gradient_BG.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listen-button {
+  background-color: transparent;
+  color: #ffc404;
+  border: 2px solid #ffc404;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.listen-button:hover {
+  background-color: #ffc404;
+  color: black;
+}
